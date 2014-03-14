@@ -9,6 +9,7 @@ public class main {
 
     private static Scanner scanner;
 
+    // Imperial strikes back!!! 
     // Numberphilen innoittamana käytin taulukon selaukseen perustuvaa tapaa :)
     // Vähän vaihtelua perinteiseen solmu-olioiden läpikäymiseen.
     // Ideana on laskea pyramidia alaspäin kumuloituva summa, etsiä lehtitasolta suurin summa ja backtrackata siitä juureen.
@@ -42,6 +43,8 @@ public class main {
         int[] path_list = pathfinder(sum_list, max, level, original_list);
         System.out.println("Reitin etsiminen suurimmasta summasta juureen kesti "+ (System.nanoTime() - startTime) + " ns");
         
+        System.out.println(sum_list);
+        
         System.out.println("Oikea rivi on");
         for (int i = 1; i < path_list.length; i++) {
             System.out.println(i + ": " + path_list[i]);
@@ -57,7 +60,7 @@ public class main {
         map.put(level, path_pointer);
         
         // Polku juuresta suurimman summan saamiseksi ja alimman tason alkion lisääminen
-        int[] path_list = new int[101];
+        int[] path_list = new int[level+1];
         path_list[level] = original_list.get(path_pointer);
         
         // Asetetaan rajoitukset levelillä pysymiseksi
