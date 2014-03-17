@@ -8,8 +8,9 @@ Mukavaa kertausta tietorakenteista.
 Java versio on aito Imperial strikes back :D
 
 Käyttöohjeet:
-- lataa main.java tai Main.scala
-- käännä main.java "javac main.java" tai vastaavasti "scalac Main.scala"
-- suorita main antamalla sille parametrina Out Run-pelikentän reittitiedosto (.txt) "java main tree.txt" tai "scala Main tree.txt"
+- lataa main.java, Recursive.scala tai Map.scala
+- käännä main.java "javac main.java"
+- suorita main antamalla sille parametrina Out Run-pelikentän reittitiedosto (.txt) "java main tree.txt"
+- scala tiedostot voi suorittaa "scala Map.scala tree.txt" ja "scala Recursive.scala tree.txt"
 
 HOX! Tiedosto ei saa sisältää muuta kuin numeroita.

@@ -43,8 +43,6 @@ public class main {
         int[] path_list = pathfinder(sum_list, max, level, original_list);
         System.out.println("Reitin etsiminen suurimmasta summasta juureen kesti "+ (System.nanoTime() - startTime) + " ns");
         
-        System.out.println(sum_list);
-        
         System.out.println("Oikea rivi on");
         for (int i = 1; i < path_list.length; i++) {
             System.out.println(i + ": " + path_list[i]);
